@@ -1,15 +1,22 @@
-# Classification-of-Pet-Facial-Expression-Images
+# Notes:
 
-How to run this project:
+Requires Python 3
+To run the image download script, you need a web API call: Google Programmable Search JSON API (API Key + CSE ID)
+To run the quick data cleaning/labeling script, use a local Web UI: Gradio, to easily upload, preview, and categorize thousands of images
 
-1. Open your Google Colab NoteBook
+## Environment Installation
 
-2. Copy/Download this project
-  
-3. Run each block
-   
-4. load image sets: https://www.kaggle.com/datasets/anshtanwar/pets-facial-expression-dataset/data
+python --version
+python -m pip --version
+python -m pip install --upgrade pip
+python -m pip install requests tqdm python-slugify pillow gradio
 
-5. Model: https://drive.google.com/file/d/1MlSVd3hmuFiXZBQF4dQyVhaFJbdR-2RL/view?usp=sharing
+## Google Cloud Custom Search API and Programmable Search Engine
 
-6. In final, load your pet image to see their felling
+setx GOOGLE_API_KEY "API_KEY"
+setx GOOGLE_CX "CSE_ID"
+
+## Image Downloading and Saving
+
+After running cat_dataset_search.py, images will be automatically organized into subfolders by cat breed.
+After running labeler_tool.py, open localhost and select labels for images in the interface; categorized images will move into their class folders.
