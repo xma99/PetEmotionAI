@@ -24,7 +24,16 @@ setx GOOGLE_CX "CSE_ID"
 
 ## Image Downloading and Saving
 
-After running cat_dataset_search.py, images will be automatically organized into subfolders by cat breed.
-![Download](Image%20of%20the%20dataset%20processing%20process/pet1.png)
+After running cat_dataset_search.py, images will be automatically organized into subfolders by cat breed
+![Download](Image%0of%20the%20dataset%20processing%20process/pet1.png)
+![Example](Image%0of%20the%20dataset%20processing%20process/pet2.png)
 
-After running labeler_tool.py, open localhost and select labels for images in the interface; categorized images will move into their class folders.
+However, many images that are not relevant for machine learning purposes are also downloaded, so the data needs to be cleaned
+![Example2](Image%0of%20the%20dataset%20processing%20process/pet3.png)
+
+After running labeler_tool.py, open localhost and select labels for images in the interface; categorized images will move into their class folders
+![Example3](Image%0of%20the%20dataset%20processing%20process/Test_Labeler.png)
+![Example4](Image%0of%20the%20dataset%20processing%20process/pet4.png)
+![Example5](Image%0of%20the%20dataset%20processing%20process/pet5.png)
+![Example6](Image%0of%20the%20dataset%20processing%20process/pet6.png)
+![Example7](Image%0of%20the%20dataset%20processing%20process/pet7.png)
